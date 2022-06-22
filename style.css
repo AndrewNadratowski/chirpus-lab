@@ -1,64 +1,117 @@
-header p {
-  padding: 0px 5px;
-  color: #000;
-}
-header ul {
-  list-style: none;
-  padding: 0%;
-}
-header li {
-  padding: 5px;
-  margin: 0;
-  color: #69696a;
-}
-header button {
-  width: 100%;
-}
-body {
-  background-color: #f9fafc;
-  margin: 0%;
-  font-family: "Open Sans", sans-serif;
-}
-.main {
-  margin: 2%;
-}
+/* resets */
+
+body,
+h1,
 p {
-  color: #69696a;
-  border-left: solid;
-  padding: 10px;
+  margin: 0;
 }
 
-main button {
-  width: 100%;
+body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
 }
+
+h1 {
+  font-size: 16px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #69696a;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+.accent {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.call-to-action {
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+.call-to-action-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  display: inline-block;
+  left: 0;
+  right: 0;
   background-color: rgba(247, 193, 162, 0.7);
-  margin-left: 0;
-  margin-top: 15px;
-  align-items: center;
-  color: #69696a;
-}
-footer ul {
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-  margin-left: 275px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
-footer li {
-  list-style: none;
-  display: inline-block;
+
+footer nav ul {
+  display: flex;
 }
-footer ol li {
-  margin-right: 5px;
+
+footer a {
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+  color: black;
 }
-button {
-  color: #ffff;
-  background-color: #000;
-  padding: 2%;
-  border-radius: 20px;
+
+@media only screen and (min-width: 768px) {
+  ul {
+    display: flex;
+  }
+  main {
+    width: 50%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+  }
+  header a {
+    padding: 7px;
+    text-align: center;
+    margin: 0 5px 0 0;
+  }
+  .dot {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: 250px;
+  }
+  .dotthree {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 315px;
+  }
+  .dottwo {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 370px;
+  }
 }
